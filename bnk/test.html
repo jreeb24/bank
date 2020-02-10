@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The Surpeme Team</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="./css/foundation.css">
+<style>
+    @font-face {
+        src: local(/fonts/Junction-regular.otf)
+        font-family: 'Junction-regular'
+    }
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap') repeat scroll 0 0 rgba(0, 0, 0 , 0);
+
+body {
+  background: #fff;
+}
+
+.title {
+  font-size: 5.6rem;
+  font-family: 'Lobster', cursive;
+}
+
+.wrapper {
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+  color: #eee;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
+}
+
+@keyframes animation {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+ 
+ </style>
+ </head>
+
+<body>
+<div class="wrapper">
+  <h2 class="title">The Surpeme Leaders Trust</h2>
+
+<div class="Cash">
+ <div style="text-align: center;">  <img src="./images/money.png">
+     <form>
+        <label>CC </label>
+        <input type="text" name="cc" onsubmit="stop()" placeholder="cc">
+        <label>Pin</label>
+         <label>
+             <input type="text" name="pin" onsubmit="stop()" placeholder="pin">
+         </label>
+         <button onclick="showBalance()">Submit</button>
+
+
+    </form>
+     <div id="balance"><div data-alert class="alert-box">
+         <b>balance</b>
+         <a href="#" class="close">&times;</a>
+     </div></div>
+
+    <h3> Deposit only </h3>
+
+ </div>
+
+    <div class="grid-x">
+    <div class="cell small-6">
+    <div class="cell small-6">
+
+</div>
+    </div>
+    </div>
+</div>
+</div>
+
+
+    <br> <br>
+    <br> <br>
+<div>
+<h3> About us</h3>
+<p> We honestly dont know where your money went.</p>
+
+</div>
+
+<div>
+    <input type="text" onsubmit="yoink()">
+    <label> Gimme your ssn for free fortnite skin</label>
+</div>
+
+	
+	
+  <script src="./scripts/js.js"></script>
+</body>
+</html>
